@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container {  
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.3fr;
+    grid-template-areas:
+    "header header header header header"
+      "section1 section1 section2 section2 section2"
+      "section1 section1 section3 section3 section3"
+      "section4 section4 section5 section5 section5"
+      "section6 section6 section6 section6 section6"
+      "footer footer footer footer footer";
+}
+.header { 
+    grid-area: header; 
+    background-color: black; 
+    color:purple;
+    display: flex;
+    justify-content: space-around;
+    align-items: auto;
+}
+.header img{
+    width: 250px;
+  }
+  .header ul{
+      display: flex;
+      list-style-type: none;
+      padding: 10px;
+      color: blueviolet;
+    }
+  .header ul li{
+      margin:10px;
+      padding: 10px;
+      border: 2px blueviolet;
+  }
+  .header ul li a{
+    color:purple;
+  }
+  img{
+      width: 250px;
+      border-radius: 10%;
+      margin:10px;
+  }
+   h2{
+      text-align: center;
+      margin:10px;
+    }
+  p{
+    padding: 10px;
+  }
+  .img{
+      text-align: center;
+      margin:10px;
+      border-radius: 10%;
+      transition: all 1.5s ease;
+   }
+   img:hover{
+      transform: scale(1.2,1);
+   }
+   section{
+    border: purple 3px solid;
+    background-color: rgb(175, 170, 170)
+}
+.section1 { 
+    grid-area: section1;    
+}
+  .section2 { 
+    grid-area: section2;   
+}
+  .section3 { 
+    grid-area: section3;     
+}
+  .section4 { 
+    grid-area: section4; 
+}  
+  .section5 { 
+    grid-area: section5;
+ }  
+  .section6 { 
+    grid-area: section6;
+}  
+  .footer { 
+    grid-area: footer; 
+    background-color: black;
+    color:purple;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer img{
+  width: 150px;
+}
+.header{
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    padding: 0;
+      width: 90%;
+      margin: 20px auto;
+      opacity: 0.8;
+      text-shadow: 0 0 30px #fff;
+      color: purple;
+  }
+  .menu .item{
+    display: inline-block;
+      position: relative;
+      font-size: 1rem;
+      text-align: center;
+  }
+  .menu .item a{
+    color: purple;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+  }
+  .menu .item:hover a{
+    background-color: grey;
+    color: black;
+  }
+  .formularionpm $ npm run watch-css{
+    color: purple;
+
+  }
